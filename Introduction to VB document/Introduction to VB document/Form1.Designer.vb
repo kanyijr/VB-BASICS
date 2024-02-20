@@ -70,6 +70,12 @@ Partial Class Form
 
     End Sub
 
+    Private Sub Form_Click() Handles Me.Click
+        Me.BackColor = Color.FromName("red")
+        Me.WindowState = FormWindowState.Maximized
+
+    End Sub
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         ' Create a new instance of Form2 if it doesn't exist yet
         If secondForm Is Nothing Then
